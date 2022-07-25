@@ -1,6 +1,6 @@
 # Iknaio API Tutorial
 
-This tutorial demonstrates how to use the GraphSense REST API hosted by [Iknaio Cryptoasset Analytics GmbH](https://api.ikna.io) for conducting advanced, data-driven analytics tasks.
+This tutorial demonstrates how to use the [GraphSense REST API](https://api.ikna.io) hosted by [Iknaio Cryptoasset Analytics GmbH](https://www.ikna.io) for conducting advanced, data-driven analytics tasks.
 
 This tutorial uses sample data provided by BMF.
 
