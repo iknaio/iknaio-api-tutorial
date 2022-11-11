@@ -2,7 +2,7 @@
 
 This tutorial demonstrates how to use the [GraphSense REST API](https://api.ikna.io) hosted by [Iknaio Cryptoasset Analytics GmbH](https://www.ikna.io) for conducting advanced, data-driven analytics tasks.
 
-This tutorial uses sample data provided by BMF.
+The example dataset is a subset of data taken from [a scientific study investigating sextortion spam][paper].
 
 ## Prerequisites
 
@@ -15,6 +15,10 @@ You need Python >= 3.8
 ## Notebook preparation
 
 The tutorial will make use of several notebooks, which are available in this repository.
+
+As a first step, clone this repository to your local drive
+
+    git clone git@github.com:iknaio/iknaio-api-tutorial.git
 
 You can run the notebooks locally, as follows:
 
@@ -32,3 +36,5 @@ Run the jupyter notebooks
 
     jupyter notebook
 
+
+[paper]: https://arxiv.org/abs/1908.01051
