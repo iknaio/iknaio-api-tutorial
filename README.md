@@ -27,14 +27,16 @@ Setup a Python environment with [Anaconda](https://www.anaconda.com/products/dis
     conda env create -f environment.yml
     conda activate iknaio-api-tutorial
 
-Copy the config temp file and enter your Iknaio API key
+Copy the config template file:
 
     cp config.json.tmp config.json
-    vi config.json
 
 Run the jupyter notebooks
 
     jupyter notebook
 
+Open `config.json`, insert your API key and save.
+
+Now you are ready to run the tutorial notebooks!
 
 [paper]: https://arxiv.org/abs/1908.01051
