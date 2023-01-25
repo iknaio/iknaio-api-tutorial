@@ -18,7 +18,7 @@ The tutorial will make use of several notebooks, which are available in this rep
 
 As a first step, clone this repository to your local drive
 
-    git clone git@github.com:iknaio/iknaio-api-tutorial.git
+    git clone https://github.com/graphsense/graphsense-python.git
     cd iknaio-api-tutorial
 
 You can run the notebooks locally, as follows:
@@ -39,5 +39,10 @@ Run the jupyter notebooks
 Open `config.json`, insert your API key and save.
 
 Now you are ready to run the tutorial notebooks!
+
+
+## Documentation
+
+Documentation of the API endpoints can be found in the repository of the [GraphSense Python client](https://github.com/graphsense/graphsense-python/#documentation-for-api-endpoints).
 
 [paper]: https://arxiv.org/abs/1908.01051
