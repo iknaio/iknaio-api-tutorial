@@ -28,7 +28,7 @@ The tutorial will make use of several notebooks, which are available in this rep
 
 As a first step, clone this repository to your local drive
 
-    git clone https://github.com/graphsense/graphsense-python.git
+    git clone https://github.com/graphsense/iknaio-api-tutorial.git
     cd iknaio-api-tutorial
 
 You can run the notebooks locally, as follows:
