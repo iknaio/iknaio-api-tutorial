@@ -2,3 +2,6 @@
 config.json
 .DS_Store
 venv/
+
+# ignore pycharm settings
+.idea/*
