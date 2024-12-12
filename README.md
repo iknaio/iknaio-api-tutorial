@@ -10,7 +10,7 @@ Google colab offers a zero setup notebook environment. The only thing needed is 
 Click the following links to open the notebooks.
 
 - 1 Inspect BTC Addresses - [![1 Inspect BTC Addresses](https://colab.research.google.com/assets/colab-badge.svg)](https://githubtocolab.com/iknaio/iknaio-api-tutorial/blob/main/01_Inspect_BTC_address.ipynb)
-- 2 Sextortion Study - [![2 Sextortion Study](https://colab.research.google.com/assets/colab-badge.svg)](https://githubtocolab.com/iknaio/iknaio-api-tutorial/blob/main/02_Sextortion_Study.ipynb)
+- 2 Sextortion Study - [![2 Sextortion Study](https://colab.research.google.com/assets/colab-badge.svg)](https://githubtocolab.com/iknaio/iknaio-api-tutorial/blob/main/standalone/02_Sextortion_Study.ipynb)
 - 3 Entities Demo - [![3 Entities Demo](https://colab.research.google.com/assets/colab-badge.svg)](https://githubtocolab.com/iknaio/iknaio-api-tutorial/blob/main/03_Basic_Entities_Demo.ipynb)
 - 4 Path Search - [![4 Path Search](https://colab.research.google.com/assets/colab-badge.svg)](https://githubtocolab.com/iknaio/iknaio-api-tutorial/blob/main/04_Path_Search.ipynb)
 
