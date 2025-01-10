@@ -13,7 +13,7 @@ Click the following links to open the notebooks.
 - 2 Sextortion Study - [![2 Sextortion Study](https://colab.research.google.com/assets/colab-badge.svg)](https://githubtocolab.com/iknaio/iknaio-api-tutorial/blob/main/standalone/02_Sextortion_Study.ipynb)
 - 3 Entities Demo - [![3 Entities Demo](https://colab.research.google.com/assets/colab-badge.svg)](https://githubtocolab.com/iknaio/iknaio-api-tutorial/blob/main/03_Basic_Entities_Demo.ipynb)
 - 4 Path Search - [![4 Path Search](https://colab.research.google.com/assets/colab-badge.svg)](https://githubtocolab.com/iknaio/iknaio-api-tutorial/blob/main/04_Path_Search.ipynb)
-
+- 5 Alice DWM - [![5 Alice](https://colab.research.google.com/assets/colab-badge.svg)](https://githubtocolab.com/iknaio/iknaio-api-tutorial/blob/main/standalone/05_alice_dwm.ipynb)
 ## Prerequisites
 
 You need an API key provided by Iknaio.
