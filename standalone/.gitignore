@@ -3,3 +3,5 @@ secrets.json
 *.xlsx
 __pycache__
 *.csv
+*.db
+*.pkl

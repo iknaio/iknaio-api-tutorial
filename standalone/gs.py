@@ -4,6 +4,10 @@ from tqdm import tqdm
 import graphsense
 from graphsense.api import bulk_api, general_api
 import pandas as pd
+from datetime import datetime
+
+def ts_to_pds(ts):
+    return datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
 
 def get_QL_results(address: str, currency: str, header, params={}) -> dict:
 
