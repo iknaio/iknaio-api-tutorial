@@ -1,10 +1,9 @@
 import requests
 import time
 from tqdm import tqdm
-
-# header = {
-#     "cookie": f"remember_prod={config['graphsense']['session']}"
-# }
+import graphsense
+from graphsense.api import bulk_api, general_api
+import pandas as pd
 
 def get_QL_results(address: str, currency: str, header, params={}) -> dict:
 
@@ -50,13 +49,47 @@ def get_QL_results(address: str, currency: str, header, params={}) -> dict:
     task_id = get_task_id(address)
     return get_data(task_id)
 
-def get_QL_results_many(addresses, currency: str, header, params={}):
+def get_QL_results_many(addresses, currency: str, header, cache, params={}):
     results_list = []
     for address in tqdm(addresses, desc="Searching centralized exchange connections for addresses"):
-        results_list.append(get_QL_results(address, currency, header, params))
+        if address in cache:
+            result = cache[address]
+        else:
+            result = get_QL_results(address, currency, header, params)
+            cache[address] = result
+        results_list.append(result)
     return results_list
 
 
+def get_Pathfinder_link_from_ql_result(ql_result):
+    paths = ql_result["paths"]
+    path = paths[0]["nodes"]
+    addresses_ql = [node["output_address"] for node in path]
+    transactions_ql = [node["tx_hash"] for node in path]
 
-# df_ql = pd.DataFrame(results_list)
-# df_ql.drop(columns=["paths"])
+    # assemble the trace string
+    transaction_prefix = "T_"
+    perpetrator_prefix = "PA_"
+    neutral_prefix = "HA_"
+    trace_str = f"{perpetrator_prefix}{addresses_ql[0]}"
+    n_txs = len(transactions_ql)
+    for i in range(1, n_txs):
+        trace_str += f",{transaction_prefix}{transactions_ql[i]},{neutral_prefix}{addresses_ql[i]}"
+
+    return f"https://app.ikna.io/pathfinder/btc/path/{trace_str}"
+
+
+def get_csv(configuration, operation, CURRENCY, body):
+    with graphsense.ApiClient(configuration) as clnt:
+        blkapi = bulk_api.BulkApi(clnt)
+
+        # documentation about available bulk operations can be found
+        # here https://api.ikna.io/#/bulk/bulk_csv
+        rcsv = blkapi.bulk_csv(
+                    CURRENCY,
+                    operation=operation,
+                    body=body,
+                    num_pages=1,
+                    _preload_content=False
+                )
+        return pd.read_csv(rcsv)
