@@ -1,0 +1,6 @@
+.git
+.venv
+venv
+.ipynb_checkpoints
+config.json
+.idea

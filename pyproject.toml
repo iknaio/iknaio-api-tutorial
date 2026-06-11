@@ -1,0 +1,17 @@
+[project]
+name = "iknaio-api-tutorial"
+version = "1.0.0"
+description = "Tutorial notebooks for the GraphSense REST API hosted by Iknaio"
+requires-python = ">=3.10"
+dependencies = [
+    "graphsense-python>=2.13.5",
+    "jupyter",
+    "numpy",
+    "pandas",
+    "networkx",
+    "seaborn",
+    "matplotlib",
+]
+
+[tool.uv]
+package = false
