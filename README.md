@@ -68,6 +68,6 @@ For new code we recommend starting with the `ext` API and only dropping down to 
 
 ## Documentation
 
-Documentation of the API endpoints can be found in the repository of the [GraphSense Python client](https://github.com/graphsense/graphsense-python/#documentation-for-api-endpoints).
+Documentation of the API endpoints can be found in the repository of the [GraphSense Python client](https://github.com/graphsense/graphsense-lib/tree/master/clients/python#documentation-for-api-endpoints).
 
 [paper]: https://arxiv.org/abs/1908.01051
